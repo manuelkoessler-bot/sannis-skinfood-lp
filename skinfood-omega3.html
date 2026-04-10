@@ -78,6 +78,11 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 .so3-hero-content{max-width:var(--max);margin:0 auto;padding:0 20px;color:var(--w)}
 .so3-hero h1{font-size:1.8rem;font-weight:800;line-height:1.2;margin-bottom:10px;max-width:560px;color:#fff!important}
 .so3-hero-sub{font-size:.95rem;line-height:1.55;margin-bottom:20px;max-width:480px;opacity:.95}
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@keyframes so3-ch-in{0%{opacity:0;transform:translateX(6px)}100%{opacity:1;transform:translateX(0)}}
+.so3-hero-slogan-wrap{display:block;margin-bottom:8px;white-space:nowrap}
+.so3-hero-slogan{display:inline-block;font-family:'Allura',cursive;font-size:5rem;font-weight:400;color:#fff;letter-spacing:.02em;text-shadow:0 2px 16px rgba(0,0,0,.4);line-height:1.1}
+.so3-hero-slogan .so3-ch{display:inline-block;opacity:0;animation:so3-ch-in .5s ease forwards}
 
 /* ═══ ICONS ═══ */
 .so3-ic{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;margin-bottom:14px;flex-shrink:0}
@@ -293,6 +298,9 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
     <div class="so3-hero-bg"></div>
     <div class="so3-hero-overlay">
         <div class="so3-hero-content">
+            <div class="so3-hero-slogan-wrap">
+                <span class="so3-hero-slogan" id="so3Slogan"></span>
+            </div>
             <h1>Pflanzliche Hautpflege<br>auf Basis von Bio-Leinöl.</h1>
             <p class="so3-hero-sub">Omega-3-reich, vegan, aus der Alpin-Manufaktur.<br>Das gleiche Bio-Leinöl, das du im Müsli isst.<br>Jetzt auch für deine Haut.<br><br><strong>SANNIS Skin Food für Gesicht, Körper und Bart.</strong></p>
             <a href="#produkte" class="so3-btn so3-btn-primary">Jetzt -10% sichern – Code SKINFOOD26</a>
@@ -300,6 +308,20 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
     </div>
 </section>
 
+<script>
+(function(){
+  var text="Ölala...";
+  var el=document.getElementById("so3Slogan");
+  if(!el)return;
+  text.split("").forEach(function(ch,i){
+    var s=document.createElement("span");
+    s.className="so3-ch";
+    s.textContent=ch;
+    s.style.animationDelay=(0.4+i*0.15)+"s";
+    el.appendChild(s);
+  });
+})();
+</script>
 <!-- ===================== PROBLEM REFRAME ===================== -->
 <section class="so3-section" style="background:var(--w);">
     <div class="so3-container">
