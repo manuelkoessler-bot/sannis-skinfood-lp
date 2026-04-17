@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
 <!-- GA4 — fires only after consent (CCM19 / Complianz hook) -->
 <script>
@@ -54,7 +55,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 .so3-img-cta-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.6) 0,rgba(0,0,0,.05) 45%,rgba(0,0,0,.05) 55%,rgba(0,0,0,.7) 100%);display:flex;align-items:center;padding:0 5%}
 .so3-img-cta-content{color:#fff;max-width:480px}
 .so3-img-cta-content h3{font-size:1.6rem;font-weight:800;line-height:1.25;margin-bottom:16px;color:#fff}
-@media(max-width:767px){.so3-img-cta-content h3{font-size:1.1rem}.so3-img-cta-overlay{padding:0 6%}}
+@media(max-width:767px){.so3-img-cta-content h3{font-size:1.1rem}.so3-img-cta-overlay{padding:0 6%}.so3-split-cta{flex-direction:column!important}}
 .so3-btn-lg{font-size:1.05rem;padding:16px 40px}
 
 /* ═══ HEADER ═══ */
@@ -72,13 +73,12 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 .so3-top-bar-icon{font-size:.8rem;opacity:.7}
 
 /* ═══ HERO ═══ */
-.so3-hero{position:relative;overflow:hidden;max-height:620px}
-.so3-hero-bg{width:100%;height:620px;background:url('header-bild-optimized.webp') center center/cover no-repeat,linear-gradient(135deg,#4a1a6b 0,#7b5ea7 50%,#d4c5e2 100%)}
+.so3-hero{position:relative;overflow:hidden;max-height:860px}
+.so3-hero-bg{width:100%;height:860px;background:url('header-skinfood.webp') center 15%/cover no-repeat,linear-gradient(135deg,#4a1a6b 0,#7b5ea7 50%,#d4c5e2 100%)}
 .so3-hero-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.55) 0,rgba(0,0,0,.25) 50%,transparent 100%);padding:40px 0 28px}
 .so3-hero-content{max-width:var(--max);margin:0 auto;padding:0 20px;color:var(--w)}
 .so3-hero h1{font-size:1.8rem;font-weight:800;line-height:1.2;margin-bottom:10px;max-width:560px;color:#fff!important}
 .so3-hero-sub{font-size:.95rem;line-height:1.55;margin-bottom:20px;max-width:480px;opacity:.95}
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @keyframes so3-ch-in{0%{opacity:0;transform:translateX(6px)}100%{opacity:1;transform:translateX(0)}}
 .so3-hero-slogan-wrap{display:block;margin-bottom:8px;white-space:nowrap}
 .so3-hero-slogan{display:inline-block;font-family:'Allura',cursive;font-size:5rem;font-weight:400;color:#fff;letter-spacing:.02em;text-shadow:0 2px 16px rgba(0,0,0,.4);line-height:1.1}
@@ -149,8 +149,8 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 
 /* ═══ FOUNDER ═══ */
 .so3-founder-section{background:var(--g50);padding:48px 0}
-.so3-founder-card--light{display:flex;align-items:center;gap:28px;max-width:700px;margin:0 auto;background:var(--w);border-radius:16px;padding:28px 32px;border:1px solid var(--g200);box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.so3-founder-card--light .so3-founder-card-img{width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:center 15%;flex-shrink:0;border:3px solid var(--c)}
+.so3-founder-card--light{display:flex;align-items:center;gap:32px;max-width:820px;margin:0 auto;background:var(--w);border-radius:16px;padding:32px 36px;border:1px solid var(--g200);box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.so3-founder-card--light .so3-founder-card-img{width:280px;height:224px;border-radius:12px;object-fit:cover;object-position:center 20%;flex-shrink:0;border:3px solid var(--c)}
 .so3-founder-card--light .so3-founder-card-body{flex:1}
 .so3-founder-card--light .so3-founder-card-quote{font-size:.95rem;line-height:1.6;color:var(--g700);border:none;margin:0 0 12px;padding:0;font-style:italic}
 .so3-founder-card--light .so3-founder-card-name{font-size:.9rem;font-weight:700;color:var(--g900)}
@@ -158,15 +158,15 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 
 /* ═══ TASTE CARDS ═══ */
 .so3-taste-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:28px}
-.so3-taste-card{background:var(--w);border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.07);transition:transform .2s ease,box-shadow .2s ease}
+.so3-taste-card{background:var(--w);border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.07);transition:transform .2s ease,box-shadow .2s ease;display:flex;flex-direction:column}
 .so3-taste-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.1)}
-.so3-taste-card-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--g100)}
-.so3-taste-card-icon{width:100%;aspect-ratio:4/3;background:var(--c-bg);display:flex;align-items:center;justify-content:center;font-size:3.5rem}
-.so3-taste-card-body{padding:20px 20px 24px;position:relative}
+.so3-taste-card-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--g100);flex-shrink:0}
+.so3-taste-card-icon{width:100%;aspect-ratio:4/3;background:var(--c-bg);display:flex;align-items:center;justify-content:center;font-size:3.5rem;flex-shrink:0}
+.so3-taste-card-body{padding:20px 20px 24px;position:relative;display:flex;flex-direction:column;flex:1}
 .so3-taste-card-tag{position:absolute;top:-14px;left:16px;background:var(--c);color:var(--w);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:5px 12px;border-radius:6px}
 .so3-taste-card h3{font-size:1.1rem;font-weight:700;margin:8px 0;color:var(--g900)}
-.so3-taste-card p{font-size:.88rem;color:var(--g600);line-height:1.5;margin:0}
-.so3-taste-card-steps{list-style:none;padding:0;margin:10px 0 0}
+.so3-taste-card p{font-size:.88rem;color:var(--g600);line-height:1.5;margin:0;min-height:3em}
+.so3-taste-card-steps{list-style:none;padding:0;margin:10px 0 0;flex:1}
 .so3-taste-card-steps li{padding:7px 0;font-size:.85rem;color:var(--g600);border-bottom:1px solid var(--g100);display:flex;gap:10px;align-items:flex-start}
 .so3-taste-card-steps li:last-child{border:none}
 .so3-step-num{background:var(--c-bg);color:var(--c);font-weight:700;font-size:.7rem;min-width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -221,23 +221,27 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 @media(min-width:1280px){
 .so3-section{padding:88px 0}
 .so3-section-headline{font-size:2.2rem}
-.so3-hero{max-height:660px}
-.so3-hero-bg{height:660px}
+.so3-hero{max-height:960px}
+.so3-hero-bg{height:960px}
 .so3-hero h1{font-size:2.8rem}
 .so3-hero-overlay{padding:48px 0 36px}
 }
 @media(max-width:767px){
 .so3-footer-grid{grid-template-columns:1fr 1fr!important;gap:24px!important}
-.so3-section-img-break--ph{aspect-ratio:16/9}
+.so3-section-img-break{aspect-ratio:4/3}
+.so3-section-img-break--ph{aspect-ratio:4/3}
 .so3-google-review-card{min-width:260px;max-width:280px;padding:18px}
 .so3-product-grid{grid-template-columns:repeat(2,1fr);gap:12px}
 .so3-prod-body h3{font-size:.85rem}
 .so3-prod-desc{font-size:.72rem}
 .so3-prod-price{font-size:.95rem}
 .so3-prod-link{padding:8px 16px;font-size:.75rem}
+.so3-split-cta img{height:320px!important}
+.so3-split-cta .so3-btn-lg{font-size:.85rem!important;padding:12px 20px!important}
+.so3-frank-text{padding:0 4% 32px!important;font-size:.9rem!important}
 }
 @media(max-width:520px){
-.so3-hero,.so3-hero-bg{max-height:440px;height:440px}
+.so3-hero,.so3-hero-bg{max-height:620px;height:620px}
 .so3-hero h1{font-size:1.5rem}
 .so3-hero-sub{font-size:.85rem;margin-bottom:14px}
 .so3-hero .so3-btn-primary{font-size:.85rem;padding:12px 24px}
@@ -299,7 +303,8 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
                 <span class="so3-hero-slogan" id="so3Slogan"></span>
             </div>
             <h1>Pflanzliche Hautpflege<br>auf Basis von Bio-Leinöl.</h1>
-            <p class="so3-hero-sub">Omega-3-reich, vegan, aus der Alpin-Manufaktur.<br>Die Kraft des Bio-Leinöls – als Nahrung für Innen und Außen.<br>Jetzt für deine Haut entdecken.<br><br><strong>SANNIS Skin Food für Gesicht, Körper und Bart.</strong></p>
+            <p class="so3-hero-sub">Omega-3-reich, vegan, aus der Alpin-Manufaktur.<br>Die Kraft des Bio-Leinöls – als Nahrung für Innen und Außen.<br>Jetzt für deine Haut entdecken.</p>
+            <p class="so3-hero-sub" style="margin-top:6px;margin-bottom:20px;opacity:1;"><strong>SANNIS Skin Food für Gesicht, Körper und Bart.</strong></p>
             <a href="#produkte" class="so3-btn so3-btn-primary">Jetzt -10% sichern – Code SKINFOOD26</a>
         </div>
     </div>
@@ -354,7 +359,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 <section class="so3-section" style="background:var(--g50);">
     <div class="so3-container">
         <h2 class="so3-section-headline">Was drin ist. Und was nicht.</h2>
-        <p class="so3-section-subline">Transparenz statt Werbeversprechen. Jedes Produkt basiert auf unserer Bio-Leinöl-Formel.</p>
+        <p class="so3-section-subline">Transparenz statt Werbeversprechen.<br>Jedes Produkt basiert auf unserer Bio-Leinöl-Formel.</p>
         <div style="max-width:860px;margin:0 auto;">
             <div style="margin-bottom:24px;">
                 <div class="so3-ingr-grid">
@@ -393,11 +398,29 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
     </div>
 </section>
 
-<!-- ═══ TRENNER: FRAU MIT FLASCHE ═══ -->
-<div class="so3-img-cta-wrap">
-    <img src="trenner-flasche.webp" alt="Frau mit SANNIS Skin Food" class="so3-section-img-break" loading="lazy">
-    <div class="so3-img-cta-overlay" style="justify-content:flex-end;padding:0 6%;">
-        <a href="#produkte" class="so3-btn so3-btn-white so3-btn-lg">Jetzt 10% sparen – Code SKINFOOD26</a>
+<!-- ═══ INHALTSSTOFFE BILD ═══ -->
+<img src="inhaltsstoffe-bild.webp" alt="SANNIS Skin Food Inhaltsstoffe" class="so3-section-img-break" loading="lazy" style="aspect-ratio:auto;max-height:480px;object-position:center;">
+
+<!-- ═══ TRENNER: SPLIT CTA ═══ -->
+<div class="so3-split-cta" style="display:flex;width:100%;line-height:0;">
+    <div style="position:relative;flex:1;overflow:hidden;">
+        <img src="cta-links-mike.webp" alt="Naturinspirierte Hautpflege für Sie und Ihn" style="width:100%;height:480px;object-fit:cover;display:block;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.65) 0,rgba(0,0,0,.3) 55%,transparent 100%);display:flex;align-items:center;padding:0 36px;">
+            <div>
+                <p style="color:rgba(255,255,255,.65);font-size:.72rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;margin:0 0 12px;text-shadow:0 1px 6px rgba(0,0,0,.5);">SANNIS Skin Food</p>
+                <div style="font-family:Inter,-apple-system,sans-serif;color:#fff;font-size:1.75rem;font-weight:800;line-height:1.2;text-shadow:0 2px 12px rgba(0,0,0,.6);">
+                  <span style="display:block;">Naturinspirierte</span>
+                  <span style="display:block;">Kosmetik</span>
+                  <span style="display:block;">für Sie und Ihn.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="position:relative;flex:1;overflow:hidden;">
+        <img src="cta-rechts-laura.webp" alt="Frau mit SANNIS Skin Food" style="width:100%;height:480px;object-fit:cover;display:block;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to left,rgba(0,0,0,.6) 0,rgba(0,0,0,.25) 55%,transparent 100%);display:flex;align-items:center;justify-content:flex-end;padding:0 36px;">
+            <a href="#produkte" class="so3-btn so3-btn-white so3-btn-lg">Jetzt 10% sparen – Code SKINFOOD26</a>
+        </div>
     </div>
 </div>
 
@@ -554,18 +577,17 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 </section>
 
 <!-- ===================== GRÜNDER-STATEMENT ===================== -->
-<section class="so3-section so3-founder-section">
-    <div class="so3-container">
-        <div class="founder-card so3-founder-card--light">
-            <img width="400" height="400" src="frank-skinfood-optimized.webp" alt="Frank Nessler, Gründer SANNIS" class="so3-founder-card-img" loading="lazy">
-            <div class="so3-founder-card-body">
-                <blockquote class="so3-founder-card-quote">"Für unsere Skin Food Produkte verwenden wir genau das Bio-Leinöl, das unsere Kund:innen seit Jahren täglich für ihre Omega-3-Routine nutzen – pur, im Müsli oder im Salat."</blockquote>
-                <div class="so3-founder-card-name">Frank Nessler</div>
-                <div class="so3-founder-card-role">Gründer &amp; Geschäftsführer</div>
-            </div>
+<div style="position:relative;width:100%;line-height:0;display:block;">
+    <img src="frank-fullwidth.webp" alt="Frank Nessler, Gründer SANNIS" style="width:100%;height:600px;object-fit:cover;object-position:center 20%;display:block;" loading="lazy">
+    <div class="so3-frank-text" style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.1) 0,rgba(0,0,0,.05) 40%,rgba(0,0,0,.55) 100%);display:flex;align-items:flex-end;justify-content:flex-end;padding:0 6% 48px;">
+        <div style="max-width:420px;">
+            <blockquote style="color:#fff;font-size:1.05rem;font-style:italic;line-height:1.7;margin:0 0 24px;padding:0;border:none;text-shadow:0 1px 8px rgba(0,0,0,.5);">"Für unsere Skin Food Produkte verwenden wir genau das Bio-Leinöl, das unsere Kund:innen seit Jahren täglich für ihre Omega-3-Routine nutzen – pur, im Müsli oder im Salat."</blockquote>
+            <div style="display:block;width:32px;height:2px;background:rgba(255,255,255,.4);margin-bottom:14px;"></div>
+            <p style="display:block;color:#fff;font-size:1rem;font-weight:700;letter-spacing:.03em;text-shadow:0 1px 6px rgba(0,0,0,.5);margin:0 0 6px 0;line-height:1.3;">Frank Nessler</p>
+            <p style="display:block;color:rgba(255,255,255,.6);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin:0;line-height:1.3;">Gründer &amp; Geschäftsführer</p>
         </div>
     </div>
-</section>
+</div>
 
 <!-- ===================== USE-CASE KARTEN ===================== -->
 <section class="so3-section" style="background:var(--w);">
@@ -580,35 +602,35 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
                     <h3>Morgenroutine</h3>
                     <p>Frisch und gepflegt in den Tag starten.</p>
                     <ul class="so3-taste-card-steps">
-                        <li><span class="so3-step-num">1</span> Reinigungsöl mit lauwarmem Wasser anwenden</li>
-                        <li><span class="so3-step-num">2</span> Tagescreme sanft einmassieren</li>
-                        <li><span class="so3-step-num">3</span> Handcreme für den Abschluss</li>
+                        <li><span class="so3-step-num">1</span> Reinigungsöl mit lauwarmem Wasser anwenden. Rosentonic als erfrischender Feuchtigkeitsboost für die Haut.</li>
+                        <li><span class="so3-step-num">2</span> Tagesöl oder Tagescreme in die angefeuchtete Haut sanft einmassieren.</li>
+                        <li><span class="so3-step-num">3</span> Handcreme als Pflegebegleiter und Finish.</li>
                     </ul>
                 </div>
             </a>
             <a href="https://sannis.at/produkt/sannis-skin-food-nachtcreme/?utm_source=google&utm_medium=cpc&utm_campaign=skinfood_launch" class="so3-taste-card" style="display:block;text-decoration:none;color:inherit;">
-                <img src="routine-abend.webp" alt="Frau mit SANNIS Skin Food Ölen - Abendroutine" class="so3-taste-card-img" loading="lazy">
+                <img src="routine-abend-neu.webp" alt="Frau mit SANNIS Skin Food - Abendroutine" class="so3-taste-card-img" loading="lazy">
                 <div class="so3-taste-card-body">
                     <span class="so3-taste-card-tag">Regeneration</span>
                     <h3>Abendroutine</h3>
                     <p>Über Nacht für spürbar geschmeidige Haut.</p>
                     <ul class="so3-taste-card-steps">
-                        <li><span class="so3-step-num">1</span> Reinigungsöl zum sanften Abschminken</li>
-                        <li><span class="so3-step-num">2</span> Nachtcreme großzügig auftragen</li>
-                        <li><span class="so3-step-num">3</span> Handcreme als reichhaltige Nachtpflege</li>
+                        <li><span class="so3-step-num">1</span> Reinigungsöl zum sanften Abreinigen und Abschminken. Rosentonic als erfrischender Feuchtigkeitsboost für die Haut.</li>
+                        <li><span class="so3-step-num">2</span> Nachtöl oder Nachtcreme in die angefeuchtete Haut einmassieren.</li>
+                        <li><span class="so3-step-num">3</span> Hand- und Fußcreme als Pflegebegleiter und Finish.</li>
                     </ul>
                 </div>
             </a>
             <a href="https://sannis.at/produkt/sannis-skin-food-bartoel/?utm_source=google&utm_medium=cpc&utm_campaign=skinfood_launch" class="so3-taste-card" style="display:block;text-decoration:none;color:inherit;">
-                <img src="routine-bart.webp" alt="Mann mit SANNIS Skin Food - Bartpflege" class="so3-taste-card-img" loading="lazy">
+                <img src="routine-bart-neu.webp" alt="SANNIS Bartöl - Bartpflege" class="so3-taste-card-img" loading="lazy">
                 <div class="so3-taste-card-body">
                     <span class="so3-taste-card-tag">Für Ihn</span>
                     <h3>Bartpflege-Routine</h3>
                     <p>Gepflegter Bart, geschmeidige Haut darunter.</p>
                     <ul class="so3-taste-card-steps">
-                        <li><span class="so3-step-num">1</span> Mit SANNIS Rosentonic den Bart einsprühen</li>
-                        <li><span class="so3-step-num">2</span> Bartöl in den feuchten Bart einarbeiten</li>
-                        <li><span class="so3-step-num">3</span> Tagescreme für die bartfreien Partien</li>
+                        <li><span class="so3-step-num">1</span> Reinigungsöl mit lauwarmem Wasser anwenden. Rosentonic als erfrischender Feuchtigkeitsboost für Haut und Haar.</li>
+                        <li><span class="so3-step-num">2</span> Tagescreme in die angefeuchteten, bartfreien Partien einmassieren.</li>
+                        <li><span class="so3-step-num">3</span> Bartöl in das angefeuchtete Barthaar einmassieren.</li>
                     </ul>
                 </div>
             </a>
@@ -616,8 +638,8 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
     </div>
 </section>
 
-<!-- ═══ FULL-WIDTH BILDTRENNER ═══ -->
-<img src="trenner-strand.webp" alt="Frau am Strand mit SANNIS Skin Food Produkten" class="so3-section-img-break" loading="lazy">
+<!-- ═══ ALPINE ABSCHLUSS ═══ -->
+<img src="trenner-alpin.webp" alt="SANNIS Skin Food in der Alpinkulisse" class="so3-section-img-break" loading="lazy" style="margin-top:0;object-position:center 20%;">
 
 <!-- ===================== PRODUKTE ===================== -->
 <section class="so3-section so3-product" id="produkte">
@@ -639,24 +661,24 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
             </div>
             <div class="so3-prod-card">
                 <div class="so3-prod-img">
-                    <img src="https://sannis.at/wp-content/uploads/2026/01/Tagescreme.webp" alt="SANNIS Skin Food Tagescreme" loading="lazy">
+                    <img src="https://sannis.at/wp-content/uploads/2026/01/A01-Tag-1-600x600.webp" alt="SANNIS Skin Food Tagesöl" loading="lazy">
                 </div>
                 <div class="so3-prod-body">
-                    <h3>Skin Food Tagescreme</h3>
-                    <p class="so3-prod-desc">Nährender Feuchtigkeitsboost für den Tag. 75 ml.</p>
-                    <div class="so3-prod-price">29,90 €</div>
-                    <a href="https://sannis.at/produkt/sannis-skin-food-tagescreme/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=skinfood_launch&amp;utm_content=gesichtspflege" class="so3-prod-link">Zum Produkt</a>
+                    <h3>Skin Food Tagesöl</h3>
+                    <p class="so3-prod-desc">Leichtes Gesichtsöl mit Jojoba, Mandel, Marula und Wildrose. Duft nach Rosengeranie und Grapefruit. 30 ml.</p>
+                    <div class="so3-prod-price">39,90 €</div>
+                    <a href="https://sannis.at/produkt/sannis-skin-food-tagoel/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=skinfood_launch&amp;utm_content=gesichtspflege" class="so3-prod-link">Zum Produkt</a>
                 </div>
             </div>
             <div class="so3-prod-card">
                 <div class="so3-prod-img">
-                    <img src="https://sannis.at/wp-content/uploads/2026/01/Nachtcreme.webp" alt="SANNIS Skin Food Nachtcreme" loading="lazy">
+                    <img src="https://sannis.at/wp-content/uploads/2026/01/A07-Rosentonic-100ml-1-600x600.webp" alt="SANNIS Skin Food Rosentonic" loading="lazy">
                 </div>
                 <div class="so3-prod-body">
-                    <h3>Skin Food Nachtcreme</h3>
-                    <p class="so3-prod-desc">Regenerierende Nachtpflege mit Bio-Leinöl. 75 ml.</p>
-                    <div class="so3-prod-price">29,90 €</div>
-                    <a href="https://sannis.at/produkt/sannis-skin-food-nachtcreme/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=skinfood_launch&amp;utm_content=gesichtspflege" class="so3-prod-link">Zum Produkt</a>
+                    <h3>Skin Food Rosentonic</h3>
+                    <p class="so3-prod-desc">100% natürliches Rosenwasser. Erfrischendes Tonic für Gesicht, Haar und Körper. 100 ml.</p>
+                    <div class="so3-prod-price">19,90 €</div>
+                    <a href="https://sannis.at/produkt/sannis-skin-food-rosentonic/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=skinfood_launch&amp;utm_content=gesichtspflege" class="so3-prod-link">Zum Produkt</a>
                 </div>
             </div>
             <div class="so3-prod-card">
@@ -673,13 +695,13 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
             </div>
             <div class="so3-prod-card">
                 <div class="so3-prod-img">
-                    <img src="https://sannis.at/wp-content/uploads/2026/01/Handcreme-1.webp" alt="SANNIS Skin Food Handcreme" loading="lazy">
+                    <img src="https://sannis.at/wp-content/uploads/2026/01/Nachtcreme.webp" alt="SANNIS Skin Food Nachtcreme" loading="lazy">
                 </div>
                 <div class="so3-prod-body">
-                    <h3>Skin Food Handcreme</h3>
-                    <p class="so3-prod-desc">Beruhigende Pflege für beanspruchte Hände. 75 ml.</p>
-                    <div class="so3-prod-price">19,90 €</div>
-                    <a href="https://sannis.at/produkt/sannis-skin-food-handcreme/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=skinfood_launch&amp;utm_content=gesichtspflege" class="so3-prod-link">Zum Produkt</a>
+                    <h3>Skin Food Nachtcreme</h3>
+                    <p class="so3-prod-desc">Regenerierende Nachtpflege mit Bio-Leinöl. 75 ml.</p>
+                    <div class="so3-prod-price">29,90 €</div>
+                    <a href="https://sannis.at/produkt/sannis-skin-food-nachtcreme/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=skinfood_launch&amp;utm_content=gesichtspflege" class="so3-prod-link">Zum Produkt</a>
                 </div>
             </div>
         </div>
@@ -718,70 +740,6 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
     </div>
 </section>
 
-<!-- ===================== NEWSLETTER ===================== -->
-<section class="so3-footer-newsletter" style="background:#452669; padding:48px 20px; text-align:center; position:relative; overflow:hidden;">
-    <!-- 📸 OPTIONAL: Hintergrundbild für Newsletter-Sektion (z.B. Lavendelfeld, Alpen-Landschaft, Produktarrangement) — als CSS background-image einsetzen -->
-    <div class="so3-container" style="position:relative;z-index:1;">
-        <h3 style="color:#fff; font-size:1.4rem; font-weight:700; margin-bottom:8px;">Bleib informiert</h3>
-        <p style="color:rgba(255,255,255,0.7); margin-bottom:20px; font-size:.9rem; line-height:1.6; max-width:520px; margin-left:auto; margin-right:auto;">Neue Produkte, Pflegetipps und exklusive Angebote. Direkt in dein Postfach.</p>
-        <form class="so3-footer-nl-form" onsubmit="event.preventDefault();alert('Newsletter-Anmeldung wird mit dem Shop-System verbunden.');">
-            <input type="email" placeholder="Deine E-Mail-Adresse" required autocomplete="off">
-            <button type="submit">Anmelden</button>
-        </form>
-    </div>
-</section>
-
-</div><!-- /sannis-omega3-lp -->
-
-<!-- ===================== FOOTER (1:1 O3) ===================== -->
-<footer class="so3-footer" style="background:#442769; color:#fff; padding:60px 0 0; overflow-x:hidden;">
-    <div class="so3-footer-grid" style="max-width:1200px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:40px;">
-        <div>
-            <img src="https://sannis.at/wp-content/uploads/2026/03/sannis-logo-ohne-h-white.webp" alt="SANNIS Bio-Leinoel Manufaktur" style="max-width:200px; margin-bottom:20px;">
-            <p style="font-size:0.9rem; color:#ccc; line-height:1.6;">SANNIS Bio-Leinöl Manufaktur.<br>Pflanzliche Hautpflege. Schonend kaltgepresst.<br>Natürlich wirksam.</p>
-            <div style="display:flex; gap:12px; margin-top:20px;">
-                <a href="https://www.instagram.com/sannis_bio_leinoele/" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-size:18px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-                <a href="https://www.facebook.com/sannisbio" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-size:18px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
-            </div>
-        </div>
-        <div>
-            <h4 style="font-size:1.1rem; margin-bottom:16px; font-weight:600;">Shop</h4>
-            <ul style="list-style:none; padding:0; margin:0;">
-                <li style="margin-bottom:10px;"><a href="https://sannis.at/produkt-kategorie/bio-leinoel/" style="color:#ccc; text-decoration:none; font-size:0.9rem;">Bio-Leinöle</a></li>
-                <li style="margin-bottom:10px;"><a href="https://sannis.at/produkt-kategorie/sannis-skin-food/" style="color:#ccc; text-decoration:none; font-size:0.9rem;">Skin Food</a></li>
-                <li style="margin-bottom:10px;"><a href="https://sannis.at/produkt-kategorie/nuesse-samen/" style="color:#ccc; text-decoration:none; font-size:0.9rem;">Nüsse &amp; Samen</a></li>
-                <li style="margin-bottom:10px;"><a href="https://sannis.at/produkt-kategorie/geschenke/" style="color:#ccc; text-decoration:none; font-size:0.9rem;">Geschenksets</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 style="font-size:1.1rem; margin-bottom:16px; font-weight:600;">Über uns</h4>
-            <ul style="list-style:none; padding:0; margin:0;">
-                <li style="margin-bottom:10px;"><a href="https://sannis.at/manufaktur/" style="color:#ccc; text-decoration:none; font-size:0.9rem;">Unsere Manufaktur</a></li>
-                <li style="margin-bottom:10px;"><a href="https://sannis.at/team-kontakt/" style="color:#ccc; text-decoration:none; font-size:0.9rem;">Das Team</a></li>
-                <li style="margin-bottom:10px;"><a href="https://sannis.at/rezepte/" style="color:#ccc; text-decoration:none; font-size:0.9rem;">Rezepteblog</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 style="font-size:1.1rem; margin-bottom:16px; font-weight:600;">Service</h4>
-            <ul style="list-style:none; padding:0; margin:0;">
-                <li style="margin-bottom:10px;"><a href="https://sannis.at/faq/" style="color:#ccc; text-decoration:none; font-size:0.9rem;">FAQ</a></li>
-                <li style="margin-bottom:10px;"><a href="https://sannis.at/team-kontakt/" style="color:#ccc; text-decoration:none; font-size:0.9rem;">Kontakt</a></li>
-            </ul>
-        </div>
-    </div>
-    <div style="max-width:1200px; margin:40px auto 0; padding:0 24px;">
-        <hr style="border:none; border-top:1px solid rgba(255,255,255,0.15); margin-bottom:20px;">
-        <div style="display:flex; justify-content:space-between; align-items:center; padding-bottom:24px; flex-wrap:wrap; gap:12px;">
-            <div style="display:flex; gap:20px; font-size:0.85rem;">
-                <a href="https://sannis.at/impressum/" style="color:#999; text-decoration:none;">Impressum</a>
-                <a href="https://sannis.at/datenschutzerklaerung/" style="color:#999; text-decoration:none;">Datenschutz</a>
-                <a href="https://sannis.at/rueckgabe/" style="color:#999; text-decoration:none;">Rückgabe</a>
-                <a href="https://sannis.at/agb/" style="color:#999; text-decoration:none;">AGB</a>
-            </div>
-            <p style="font-size:0.8rem; color:#777; margin:0;">© 2026 SANNIS Bio-Leinöl Manufaktur. Alle Rechte vorbehalten.</p>
-        </div>
-    </div>
-</footer>
 
 </body>
 </html>
