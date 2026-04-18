@@ -88,8 +88,8 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 /* ═══ HERO ═══ */
 .so3-hero{position:relative;overflow:hidden;max-height:860px}
 .so3-hero-bg{width:100%;height:860px;background:url('header-skinfood.webp') center 15%/cover no-repeat,linear-gradient(135deg,#4a1a6b 0,#7b5ea7 50%,#d4c5e2 100%)}
-.so3-hero-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.55) 0,rgba(0,0,0,.25) 50%,transparent 100%);padding:40px 0 28px}
-.so3-hero-content{max-width:var(--max);margin:0 auto;padding:0 20px;color:var(--w)}
+.so3-hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.45) 0,rgba(0,0,0,.25) 60%,transparent 100%);display:flex;align-items:flex-start;padding:60px 0 0}
+.so3-hero-content{max-width:600px;margin:0;padding:0 20px 0 60px;color:var(--w)}
 .so3-hero h1{font-size:1.8rem;font-weight:800;line-height:1.2;margin-bottom:10px;max-width:560px;color:#fff!important}
 .so3-hero-sub{font-size:.95rem;line-height:1.55;margin-bottom:20px;max-width:480px;opacity:.95}
 @keyframes so3-ch-in{0%{opacity:0;transform:translateX(6px)}100%{opacity:1;transform:translateX(0)}}
@@ -237,7 +237,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 .so3-hero{max-height:960px}
 .so3-hero-bg{height:960px}
 .so3-hero h1{font-size:2.8rem}
-.so3-hero-overlay{padding:48px 0 36px}
+.so3-hero-overlay{padding:80px 0 0;align-items:flex-start}
 }
 @media(max-width:767px){
 .so3-footer-grid{grid-template-columns:1fr 1fr!important;gap:24px!important}
@@ -258,6 +258,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 .so3-hero h1{font-size:1.5rem}
 .so3-hero-sub{font-size:.85rem;margin-bottom:14px}
 .so3-hero .so3-btn-primary{font-size:.85rem;padding:12px 24px}
+.so3-hero-content{padding:0 20px 0 24px!important}
 .so3-footer-nl-form{flex-direction:column;border-radius:16px;padding:8px}
 .so3-footer-nl-form input[type=email]{padding:12px 16px}
 .so3-footer-nl-form button{width:100%;padding:14px;border-radius:50px}
@@ -412,7 +413,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 </section>
 
 <!-- ═══ INHALTSSTOFFE BILD ═══ -->
-<img src="inhaltsstoffe-bild.webp" alt="SANNIS Skin Food Inhaltsstoffe" class="so3-section-img-break" loading="lazy" style="aspect-ratio:auto;max-height:480px;object-position:center;">
+<img src="inhaltsstoffe-bild.webp" alt="SANNIS Skin Food Inhaltsstoffe" loading="lazy" style="width:100%;height:auto;display:block;">
 
 <!-- ═══ TRENNER: SPLIT CTA ═══ -->
 <div class="so3-split-cta" style="display:flex;width:100%;line-height:0;">
@@ -592,7 +593,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 <!-- ===================== GRÜNDER-STATEMENT ===================== -->
 <div style="position:relative;width:100%;line-height:0;display:block;">
     <img src="frank-fullwidth.webp" alt="Frank Nessler, Gründer SANNIS" style="width:100%;height:600px;object-fit:cover;object-position:center 20%;display:block;" loading="lazy">
-    <div class="so3-frank-text" style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.1) 0,rgba(0,0,0,.05) 40%,rgba(0,0,0,.55) 100%);display:flex;align-items:flex-end;justify-content:flex-end;padding:0 6% 48px;">
+    <div class="so3-frank-text" style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.1) 0,rgba(0,0,0,.05) 40%,rgba(0,0,0,.55) 100%);display:flex;align-items:flex-start;justify-content:flex-end;padding:48px 6% 0 0;">
         <div style="max-width:420px;">
             <blockquote style="color:#fff;font-size:1.05rem;font-style:italic;line-height:1.7;margin:0 0 24px;padding:0;border:none;text-shadow:0 1px 8px rgba(0,0,0,.5);">"Für unsere Skin Food Produkte verwenden wir genau das Bio-Leinöl, das unsere Kund:innen seit Jahren täglich für ihre Omega-3-Routine nutzen – pur, im Müsli oder im Salat."</blockquote>
             <div style="display:block;width:32px;height:2px;background:rgba(255,255,255,.4);margin-bottom:14px;"></div>
@@ -652,7 +653,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 </section>
 
 <!-- ═══ ALPINE ABSCHLUSS ═══ -->
-<img src="trenner-alpin.webp" alt="SANNIS Skin Food in der Alpinkulisse" class="so3-section-img-break" loading="lazy" style="margin-top:0;object-position:center 20%;">
+<img src="trenner-alpin.webp" alt="SANNIS Skin Food in der Alpinkulisse" loading="lazy" style="width:100%;height:auto;display:block;margin-top:0;">
 
 <!-- ===================== PRODUKTE ===================== -->
 <section class="so3-section so3-product" id="produkte">
@@ -674,6 +675,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
             </div>
             <div class="so3-prod-card">
                 <div class="so3-prod-img">
+                    <span class="so3-prod-badge">Neu</span>
                     <img src="https://sannis.at/wp-content/uploads/2026/01/A01-Tag-1-600x600.webp" alt="SANNIS Skin Food Tagesöl" loading="lazy">
                 </div>
                 <div class="so3-prod-body">
@@ -685,6 +687,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
             </div>
             <div class="so3-prod-card">
                 <div class="so3-prod-img">
+                    <span class="so3-prod-badge">Neu</span>
                     <img src="https://sannis.at/wp-content/uploads/2026/01/A07-Rosentonic-100ml-1-600x600.webp" alt="SANNIS Skin Food Rosentonic" loading="lazy">
                 </div>
                 <div class="so3-prod-body">
