@@ -65,7 +65,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 .so3-btn-white{background:#fff;color:var(--c)!important;font-weight:700}
 .so3-btn-white:hover{background:var(--c-bg);transform:translateY(-1px)}
 .so3-img-cta-wrap{position:relative;overflow:hidden;width:100%;display:block;line-height:0;background:#000;font-size:0}
-.so3-img-cta-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.6) 0,rgba(0,0,0,.05) 45%,rgba(0,0,0,.05) 55%,rgba(0,0,0,.7) 100%);display:flex;align-items:center;padding:0 5%}
+.so3-img-cta-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.2) 0,rgba(0,0,0,.01) 45%,rgba(0,0,0,.01) 55%,rgba(0,0,0,.25) 100%);display:flex;align-items:center;padding:0 5%}
 .so3-img-cta-content{color:#fff;max-width:480px}
 .so3-img-cta-content h3{font-size:1.6rem;font-weight:800;line-height:1.25;margin-bottom:16px;color:#fff}
 @media(max-width:767px){.so3-img-cta-content h3{font-size:1.1rem}.so3-img-cta-overlay{padding:0 6%}.so3-split-cta{flex-direction:column!important}}
@@ -78,7 +78,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 .so3-lp-shipping{font-family:Inter,sans-serif;font-size:.72rem;font-weight:400;color:var(--g500);display:flex;align-items:center;gap:4px}
 .so3-lp-shipping .full{display:inline}
 .so3-lp-shipping .short{display:none}
-@media(max-width:640px){.so3-lp-shipping .full{display:none}.so3-lp-shipping .short{display:inline}.so3-lp-cta{font-size:.75rem;padding:8px 14px}}
+@media(max-width:640px){.so3-lp-shipping .full{display:none}.so3-lp-shipping .short{display:inline}.so3-lp-cta{font-size:.75rem;padding:8px 14px;white-space:normal;text-align:center;max-width:160px;line-height:1.3}}
 .so3-lp-cta{background:#442769;color:#fff!important;padding:10px 24px;border-radius:50px;font-family:Inter,sans-serif;font-size:.9rem;font-weight:600;white-space:nowrap;transition:background .2s;text-decoration:none}
 .so3-lp-cta:hover{background:var(--c-light)}
 .so3-top-bar{background:var(--g100);border-bottom:1px solid var(--g200);padding:6px 20px;display:flex;justify-content:center;gap:24px;flex-wrap:wrap;font-size:.75rem;color:var(--g600);font-family:Inter,sans-serif}
@@ -88,7 +88,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 /* ═══ HERO ═══ */
 .so3-hero{position:relative;overflow:hidden;max-height:860px}
 .so3-hero-bg{width:100%;height:860px;background:url('header-skinfood.webp') center 15%/cover no-repeat,linear-gradient(135deg,#4a1a6b 0,#7b5ea7 50%,#d4c5e2 100%)}
-.so3-hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.45) 0,rgba(0,0,0,.25) 60%,transparent 100%);display:flex;align-items:flex-start;padding:60px 0 0}
+.so3-hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.18) 0,rgba(0,0,0,.06) 60%,transparent 100%);display:flex;align-items:flex-start;padding:60px 0 0}
 .so3-hero-content{max-width:600px;margin:0;padding:0 20px 0 60px;color:var(--w)}
 .so3-hero h1{font-size:1.8rem;font-weight:800;line-height:1.2;margin-bottom:10px;max-width:560px;color:#fff!important}
 .so3-hero-sub{font-size:.95rem;line-height:1.55;margin-bottom:20px;max-width:480px;opacity:.95}
@@ -252,9 +252,11 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 .so3-split-cta img{height:320px!important}
 .so3-split-cta .so3-btn-lg{font-size:.85rem!important;padding:12px 20px!important}
 .so3-frank-text{padding:0 4% 32px!important;font-size:.9rem!important;align-items:flex-end!important;justify-content:flex-start!important}
+.so3-frank-img{height:500px!important;object-position:center 15%!important}
 }
 @media(max-width:520px){
-.so3-hero,.so3-hero-bg{max-height:620px;height:620px}
+.so3-hero,.so3-hero-bg{max-height:500px;height:500px}
+.so3-hero-bg{background-position:58% 20%!important}
 .so3-hero h1{font-size:1.5rem}
 .so3-hero-sub{font-size:.85rem;margin-bottom:14px}
 .so3-hero .so3-btn-primary{font-size:.85rem;padding:12px 24px}
@@ -419,7 +421,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 <div class="so3-split-cta" style="display:flex;width:100%;line-height:0;">
     <div style="position:relative;flex:1;overflow:hidden;">
         <img src="cta-links-mike.webp" alt="Naturinspirierte Hautpflege für Sie und Ihn" style="width:100%;height:480px;object-fit:cover;display:block;">
-        <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.65) 0,rgba(0,0,0,.3) 55%,transparent 100%);display:flex;align-items:center;padding:0 36px;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.22) 0,rgba(0,0,0,.06) 55%,transparent 100%);display:flex;align-items:center;padding:0 36px;">
             <div>
                 <p style="color:rgba(255,255,255,.65);font-size:.72rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;margin:0 0 12px;text-shadow:0 1px 6px rgba(0,0,0,.5);">SANNIS Skin Food</p>
                 <div style="font-family:Inter,-apple-system,sans-serif;color:#fff;font-size:1.75rem;font-weight:800;line-height:1.2;text-shadow:0 2px 12px rgba(0,0,0,.6);">
@@ -432,7 +434,7 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
     </div>
     <div style="position:relative;flex:1;overflow:hidden;">
         <img src="cta-rechts-laura.webp" alt="Frau mit SANNIS Skin Food" style="width:100%;height:480px;object-fit:cover;display:block;">
-        <div style="position:absolute;inset:0;background:linear-gradient(to left,rgba(0,0,0,.6) 0,rgba(0,0,0,.25) 55%,transparent 100%);display:flex;align-items:center;justify-content:flex-end;padding:0 36px;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to left,rgba(0,0,0,.2) 0,rgba(0,0,0,.06) 55%,transparent 100%);display:flex;align-items:center;justify-content:flex-end;padding:0 36px;">
             <a href="#produkte" class="so3-btn so3-btn-white so3-btn-lg">Jetzt 10% sparen – Code SKINFOOD26</a>
         </div>
     </div>
@@ -592,8 +594,8 @@ html{overflow-x:hidden;width:100%;margin:0;padding:0}body{overflow-x:clip;width:
 
 <!-- ===================== GRÜNDER-STATEMENT ===================== -->
 <div style="position:relative;width:100%;line-height:0;display:block;">
-    <img src="frank-fullwidth.webp" alt="Frank Nessler, Gründer SANNIS" style="width:100%;height:600px;object-fit:cover;object-position:center 20%;display:block;" loading="lazy">
-    <div class="so3-frank-text" style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.1) 0,rgba(0,0,0,.05) 40%,rgba(0,0,0,.55) 100%);display:flex;align-items:flex-start;justify-content:flex-end;padding:48px 6% 0 0;">
+    <img src="frank-fullwidth.webp" alt="Frank Nessler, Gründer SANNIS" class="so3-frank-img" style="width:100%;height:600px;object-fit:cover;object-position:center 20%;display:block;" loading="lazy">
+    <div class="so3-frank-text" style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.02) 0,rgba(0,0,0,.01) 40%,rgba(0,0,0,.22) 100%);display:flex;align-items:flex-start;justify-content:flex-end;padding:48px 6% 0 0;">
         <div style="max-width:420px;">
             <blockquote style="color:#fff;font-size:1.05rem;font-style:italic;line-height:1.7;margin:0 0 24px;padding:0;border:none;text-shadow:0 1px 8px rgba(0,0,0,.5);">"Für unsere Skin Food Produkte verwenden wir genau das Bio-Leinöl, das unsere Kund:innen seit Jahren täglich für ihre Omega-3-Routine nutzen – pur, im Müsli oder im Salat."</blockquote>
             <div style="display:block;width:32px;height:2px;background:rgba(255,255,255,.4);margin-bottom:14px;"></div>
